@@ -1,0 +1,7 @@
+convert to data Frame.....
+cnt=df.isnull().sum()/len(df)
+Name=miss.columns()
+sns.set(style="whitegrid", color_codes=True)
+sns.barplot(x = Name, y = cnt , data=miss)
+plt.xticks(rotation = 90)
+sns.plt.show()
