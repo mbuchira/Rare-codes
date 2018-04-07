@@ -5,3 +5,10 @@ sns.set(style="whitegrid", color_codes=True)
 sns.barplot(x = Name, y = cnt , data=miss)
 plt.xticks(rotation = 90)
 sns.plt.show()
+
+*********************Selecting columns*****************************************
+for e, i in enumerate(df.columns):
+     print(e,i)
+x=df.ix[:,df.columns[[0,1,2,3,4]]]
+              or
+x=df.ix[:,np.arange(8)]    or       np.array([0,1,4,5])
